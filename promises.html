@@ -1,0 +1,13 @@
+let promise = new Promise(function(resolve, reject) {
+    // Simulating an asynchronous operation (e.g., fetching data)
+    setTimeout(function() {
+        resolve("Data fetched successfully");
+    }, 2000);
+});
+
+// Using the Promise
+promise.then(function(value) {
+    console.log(value); // "Data fetched successfully"
+}).catch(function(error) {
+    console.error(error);
+});

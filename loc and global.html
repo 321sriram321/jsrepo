@@ -1,0 +1,9 @@
+let varName = "Global Variable";
+
+function shadowingExample() {
+    let varName = "Local Variable";
+    console.log(varName);  // Output: Local Variable
+}
+
+shadowingExample();
+console.log(varName);  
